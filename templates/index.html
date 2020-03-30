@@ -1,0 +1,225 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Smart Farming </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  overflow: hidden;
+  background-color:   rgb(46,139,87,0.5);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+
+               html {
+               background: url(../static/bkg5.jpg) no-repeat center fixed;
+               background-size: cover;
+               }
+
+        *{
+            box-sizing: border-box;
+        }
+        h2.double{outline-style: double;}
+        body{
+                         font-family: Arial,Helvetica,sans-serif;
+        }
+        p.oblique{
+            font-style: oblique;
+        }
+p {
+  font-size: 25px;
+}
+        header{
+            background-color: rgb(32,178,170,0.4);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+               .center {
+               text-align: center;
+               }
+         div {
+
+  background-color: rgb(32,178,170,0.6);
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+div {
+
+  background-color: rgb(32,178,170,0.3);
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+.button {
+  font-size: 0.6em;
+   padding: 10px;
+  color: white;
+  background-color: rgb(32,178,170,0.3);
+  border-radius: 5px/10px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+
+}
+.box {
+  width: 0.2%;
+
+  text-align: center;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.button:hover {
+  background: #06D85F;
+}
+.popup {
+  margin: 30px auto;
+
+}
+.popup h2 {
+  margin-top: 0;
+  color: #110;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+    </style>
+</head>
+<body background-image: url(index.jpg)>
+<header>
+<div class="box" align=left>
+                <a class="button" href="#popup1" >About</a>
+
+</div>
+<div id="popup1" class="overlay">
+                <div class="popup">
+
+                                <a class="close" href="#">&times;</a>
+<div class="content">We've some interesting AI features to predict whether the crop is ready to harvest or not . </div>
+</div>
+</div>
+
+<ul>
+  <li><a class="active" href="#home">Potato</a></li>
+  <li><a href="#news">Tomato</a></li>
+  <li><a href="#contact">Brinjal</a></li>
+  <li><a href="#about">Lemon</a></li>
+</ul>
+
+
+<IMG SRC="../static/logopng.png" ALT="some text" WIDTH=150 HEIGHT=150>
+    <h1>Welcome!</h1>
+</header>
+<div><h1 class="double", style="color: white;text-align:center;">Identification Of Crops For Harvesting</h1>
+<p style="color: white;">Harvesting is the act of removing a crop from where it was growing and moving it to a more secure location for processing, consumption, or storage. Some root crops and tree fruit can be left in the field or orchard and harvested as needed, but most crops reach a period of maximum quality that is, they ripen or mature and will deteriorate if left exposed to the elements. While the major factor determining the time of harvest is the maturity of the crop, other factors such as weather, availability of harvest equipment, pickers, packing and storage facilities, and transport are important considerations.</p>
+<div class="center">
+ <h2>Upload your file here</h2>
+<form method=post enctype=multipart/form-data>
+      <p><input type=file name=file>
+         <input type=submit value=Upload>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+<script>
+
+function star(){
+document.getElementById('result').style.visibility='hidden';
+document.getElementById('upd').style.display='none';
+}
+setTimeout(function() {
+  document.getElementById('result').style.visibility='visible';
+  document.getElementById('upd').style.display='visible';
+  document.getElementById('image').style.display='none';
+  
+}, 3*1000);
+
+</script>
+<body onload="star()">
+<img src="static/abc.gif"  id="image" style="width:800px;height:600px;padding-left:380px;padding-top:100px;" align="center">
+</img>
+<img id="upd" src={{file_loc}}  height ="240" width ="260" >
+<br><h2 id="result">{{result}}</h2>
+</body>
+</html>
